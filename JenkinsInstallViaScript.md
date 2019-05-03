@@ -4,6 +4,7 @@
 
 ```bash
 git clone https://github.com/edx/jenkins-configuration
+cd jenkins-configuration
 ```
 
 ## prepare
