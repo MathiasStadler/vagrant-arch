@@ -7,7 +7,17 @@ git clone https://github.com/edx/jenkins-configuration
 cd jenkins-configuration
 ```
 
-## prepare
+## install java und pip
+
+```bash
+# java
+sudo pacman -S extra/jdk8-openjdk
+
+#pip
+sudo pacman -S python-pip
+```
+
+## run requirements and plugins
 
 ```bash
 export JENKINS_VERSION="jenkins_2.164.2"
@@ -18,7 +28,7 @@ export CONTAINER_NAME="jenkins_of_scripts"
 make clean requirements plugins
 ```
 
-## build
+## build container
 
 ```bash
 export JENKINS_VERSION="jenkins"
@@ -29,7 +39,7 @@ export CONTAINER_NAME="jenkins_of_scripts"
 make build
 ```
 
-## run
+## run container
 
 ```bash
 ## run
